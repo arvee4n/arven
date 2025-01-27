@@ -1,0 +1,161 @@
+      /*@font-face { font-family: Typewriter; src: url('1942.ttf'); } */
+@font-face { font-family: Pixelated; src: url('../fonts/ms-sans-serif-1.ttf'); }
+html {
+  font-family: Pixelated, sans-serif;
+}
+
+body {
+            margin: 0;
+            padding: 0; 
+            background-image: url('../media/misc/backgrounds/stars.webp');
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        .container {
+            width: 950px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: transparent;
+            border: 2px solid #555;
+            box-shadow: 0px 0px 10px #000;
+        }
+
+        .header {
+            background-color: transparent;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+            border: 1px;
+        }
+
+        .profile-picture {
+            text-align: center;
+        }
+
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 0px;
+            border: 3px;
+        }
+
+        .pageTitle {
+            background-color: #222;
+            font-size: 18px;
+            padding: 5px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        .section-header {
+            background-color: #222;
+            font-size: 18px;
+            padding: 5px;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        .about {
+            background-color: transparent;
+            color: #fff;
+            padding: 7px;
+        }
+
+        .navigate {
+            background-color: transparent;
+            color: #c22c27;
+            padding: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .friends-list img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border: 2px solid #555;
+        }
+
+        .movie-list img {
+            background-color: #333;
+            width: 160px;
+            height: 240px;
+            margin: 5px;
+            border: 2px solid #555;
+        }
+
+        a {
+            color: #c22c27;
+            text-decoration: none;
+        }
+        
+        a.black {
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Buttons */
+        .button {
+            font: inherit;
+            background-color: #fff;
+            border-color: #000;
+            border: 1px solid;
+        }
+        /* radio */
+
+        #lastfm {
+           background-color: transparent;
+           font: inherit;
+	       display: grid;
+	       grid-template-columns: max-content 1fr;
+
+	       h2 {grid-column: 1/3}
+        }
+
+        #lastfm-cover {
+           font: inherit;
+	       height: 40px;
+           background-color: #222;
+	       border-radius: 2px;
+	       margin-right: 5px;
+	       grid-row: span 2;
+
+	       &[src] {width: 40px}
+        }
+
+        #lastfm-track {
+	       font: inherit;
+	       align-self: end;
+        }
+
+        #lastfm-track, #lastfm-artist {
+           font: inherit;
+	       white-space: nowrap;
+	       text-overflow: ellipsis;
+	       overflow: hidden;
+	       contain: inline-size;
+        }
+        
+        .output-text {
+           color: #c22c27;
+        }
