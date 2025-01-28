@@ -2,34 +2,58 @@
 @font-face { font-family: Pixelated; src: url('../fonts/ms-sans-serif-1.ttf'); }
 html {
   font-family: Pixelated, sans-serif;
+  overflow-y: scroll;
+	scrollbar-color: #111 #444;
+	scrollbar-width: thin;
 }
 
 body {
             margin: 0;
             padding: 0; 
-            background-image: url('../media/misc/backgrounds/stars.webp');
+            background-image: url('../media/misc/backgrounds/stars.gif');
             background-attachment: fixed;
             background-position: center center;
         }
 
         .container {
-            width: 950px;
+            width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: transparent;
+            background-image: url('../media/misc/backgrounds/line.gif');
             border: 2px solid #555;
             box-shadow: 0px 0px 10px #000;
         }
 
         .header {
-            background-color: transparent;
-            padding: 15px;
+            background-image: url('../media/misc/backgrounds/metal.jpg');
             text-align: center;
             border-bottom: 5px;
         }
 
+        .footerL {
+	       background-color: transparent;
+	       position: fixed;
+            bottom: 0;
+	       left: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            justify-content: left;
+        }
+
+        .footerR {
+	       background-color: transparent;
+	       position: fixed;
+            bottom: 0;
+	       right: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            justify-content: right;
+        }
+
         table {
-            width: 100%;
+            width: 1200px;
             margin-top: 15px;
         }
 
@@ -41,6 +65,7 @@ body {
 
         .profile-picture {
             text-align: center;
+            background-image: url('../media/misc/backgrounds/web.png')
         }
 
         .profile-picture img {
@@ -51,7 +76,7 @@ body {
         }
 
         .pageTitle {
-            background-color: #222;
+            background-image: url('../media/misc/backgrounds/web.png');
             font-size: 18px;
             padding: 5px;
             text-align: center;
@@ -61,7 +86,7 @@ body {
         }
 
         .section-header {
-            background-color: #222;
+            background-image: url('../media/misc/backgrounds/web.png');
             font-size: 18px;
             padding: 5px;
             text-align: left;
@@ -71,18 +96,28 @@ body {
         }
 
         .about {
-            background-color: transparent;
+            background-image: url('../media/misc/backgrounds/web.png');
             color: #fff;
             padding: 7px;
         }
 
-        .navigate {
-            background-color: transparent;
-            color: #c22c27;
+        .blinkies {
+            background-image: url('../media/misc/backgrounds/web.png');
+            color: #fff;
             padding: 7px;
+        }
+
+        .blinkies img {
+            width: 150px;
+            justify-content: center;
+        }
+
+        .navigate {
+            background-image: url('../media/misc/backgrounds/web.png');
+            color: #c22c27;
+            padding: 5px;
             display: flex;
             justify-content: center;
-            align-items: center;
         }
 
         .friends-list img {
@@ -124,7 +159,7 @@ body {
         /* radio */
 
         #lastfm {
-           background-color: transparent;
+            background-image: url('../media/misc/backgrounds/web.png');
            font: inherit;
 	       display: grid;
 	       grid-template-columns: max-content 1fr;
@@ -158,4 +193,38 @@ body {
         
         .output-text {
            color: #c22c27;
+        }
+        .marquee {
+          background-color: #222;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 3.5%;
+          color: red;
+          white-space: nowrap;
+          overflow: hidden;
+          box-sizing: border-box;
+        }
+		.marquee img {
+			width: 150px;
+			height: 20px;
+			display: inline-block;
+          padding-left: 100%;
+          animation: marquee 15s linear infinite;
+		}
+        .marquee a {
+          display: inline-block;
+          padding-left: 100%;
+          animation: marquee 15s linear infinite;
+        }
+		.marquee p {
+          display: inline-block;
+          padding-left: 100%;
+          animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+          0%   { transform: translate(0, 0); }
+          100% { transform: translate(-100%, 0); }
         }
