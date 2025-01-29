@@ -114,7 +114,7 @@ body {
 
         .navigate {
             background-image: url('media/misc/backgrounds/web.png');
-            color: #c22c27;
+            color: #693275;
             padding: 5px;
             display: flex;
             justify-content: left;
@@ -136,7 +136,7 @@ body {
         }
 
         a {
-            color: #2A132F;
+            color: #693275;
             text-decoration: underline;
         }
         
@@ -192,7 +192,7 @@ body {
         }
         
         .output-text {
-           color: #c22c27;
+           color: #fff;
         }
         .marquee {
           background-color: #222;
