@@ -136,8 +136,8 @@ body {
         }
 
         a {
-            color: #c22c27;
-            text-decoration: none;
+            color: #2A132F;
+            text-decoration: underline;
         }
         
         a.black {
