@@ -8,5 +8,6 @@ On here you will find this such as:
  - My favorite books
  - and much more
 
-The site will be frequently updated and I plan on adding many more features and gradually cleaning up the site.
+The site will be frequently updated and I plan on adding many more features and gradually
+cleaning up the site.
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
