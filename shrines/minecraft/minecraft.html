@@ -17,6 +17,27 @@ Hey Feller...
     <link rel="stylesheet" href="minecraft.css">
     <script src="https://chattable.neocities.org/scripts/main.min.js"></script>
     </head>
+    
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll(".movie-list img");
+
+    images.forEach(img => {
+        img.addEventListener("click", function() {
+            if (this.classList.contains("enlarged")) {
+                this.classList.remove("enlarged"); // Shrink back
+            } else {
+                document.querySelectorAll(".movie-list img").forEach(image => {
+                    image.classList.remove("enlarged"); // Remove from others
+                });
+                this.classList.add("enlarged"); // Enlarge clicked image
+            }
+        });
+    });
+});
+</script>
+
+    
 <body>
     <div class="container">
         <div class="header">
@@ -72,7 +93,7 @@ Hey Feller...
                     <iframe src='https://iframe.chat/embed?chat=arvenChat' id='chattable' frameborder='none' style="height: 800px; width: 215px;"></iframe>
                     <script>
                         chattable.initialize({
-                            stylesheet : "../chattable.css"
+                            stylesheet : "../../chattable.css"
                         });
                     </script>
                 </td>
@@ -91,6 +112,8 @@ Hey Feller...
                         <img src="../../media/shrines/minecraft/spit.webp">
                         <img src="../../media/shrines/minecraft/rasheed.webp">
                         <img src="../../media/shrines/minecraft/end.webp">
+                        <img src="../../media/shrines/minecraft/nigelSky.webp">
+                        <img src="../../media/shrines/minecraft/sky.webp">
                         <img src="../../media/shrines/minecraft/lowtiergod.webp">
                     </div>
                 </td>
@@ -99,35 +122,34 @@ Hey Feller...
                 <td width="20">
                     <!--Navigation-->
                     <div class="section-header"><strong>Navigate</strong></div>
-                    <ul class="navigate">
-                        <details open="">
-                            <summary>
-                            <a href="../../index.html">About Me</a>
-                            </summary>
-                            <ul>
-                                <li>
-                                    <details open="">
-                                    <summary><a href="../../blog/blog.html">Blog ⚠️</a></summary>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details open="">
-                                    <summary><a href="../../skateboarding/skate.html">Skateboarding ⚠️</a></summary>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details open="">
-                                    <summary><a href="../shrines.html">Shrines</a></summary>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details open="">
-                                    <summary><a href="../../sitemap/sitemap.html">Sitemap</a></summary>
-                                    </details>
-                                </li>
-                            </ul>
-                        </details>
-                    </ul>
+          <ul class="navigate">
+        <details open="">
+          <summary>
+            <a href="../../index.html">Home</a>
+          </summary>
+            <ul>
+                <details open="">
+                <summary><a href="../../blog/blog.html">Blog ⚠️</a></summary>
+              </details>
+                <details open="">
+                    <summary><a href="../../skateboarding/skate.html">Skateboarding ⚠️</a></summary>
+                </details>
+                <details open="">
+                    <summary><a href="../shrines.html">Shrines</a></summary>
+                        <ul>
+                            <summary><a href="#">Minecraft</a></summary>
+                        </ul>
+                        <ul>
+                            <summary><a href="../webfishing/webfishing.html">Webfishing</a></summary>
+                        </ul>
+
+                </details>
+                <details open="">
+                    <summary><a href="../../sitemap/sitemap.html">Sitemap</a></summary>
+                </details>
+            </ul>
+        </details>
+      </ul>
                     <!--Friends Buttons-->
                     <div class="section-header"><strong>Friends' Pages</strong></div>
                     <div class="about">
